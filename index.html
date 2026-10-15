@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Easy Shop ตลาดกลางสินค้าดิจิทัลของคนไทย ซื้อขายเทมเพลต ไฟล์กราฟิก e-book และผลงานดิจิทัล">
+<title>Easy Shop — ตลาดกลางสินค้าดิจิทัลไทย</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+:root{--ink:#10254b;--muted:#64748b;--paper:#f7fbff;--line:#e2eaf4;--accent:#087cf0;--accent2:#13b8e8;--soft:#e8f4ff;--good:#147d4b;--bad:#a52828}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.wrap{width:min(1150px,92%);margin:auto}
+header{background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:4;box-shadow:0 4px 20px #0b4b8a08}.nav{min-height:70px;display:flex;align-items:center;gap:16px;justify-content:space-between}.logo{display:flex;align-items:center;gap:9px;font-size:1.2rem;font-weight:900;letter-spacing:-.045em;white-space:nowrap;color:#0754b8}.logo img{width:52px;height:48px;object-fit:contain;border-radius:10px}.logo span{color:var(--accent2)}.search{display:flex;flex:1;max-width:470px;border:1px solid var(--line);border-radius:999px;padding:5px 6px 5px 15px;background:#fafafa}.search input{border:0;outline:0;background:transparent;min-width:0;width:100%}.btn{border:0;border-radius:999px;background:linear-gradient(135deg,var(--accent),#0754cf);color:#fff;padding:10px 16px;font-weight:750;box-shadow:0 5px 14px #087cf024}.btn.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}.btn.light{background:var(--soft);color:var(--accent)}.btn:disabled{opacity:.5;cursor:not-allowed}.navactions{display:flex;gap:8px;align-items:center}.hero{padding:48px 0 28px;display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}.eyebrow{color:var(--accent);font-weight:800;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}h1{font-size:clamp(2.3rem,5vw,4.3rem);line-height:1.04;letter-spacing:-.06em;margin:12px 0}.hero p{color:var(--muted);line-height:1.75;max-width:580px}.heroart{border-radius:28px;min-height:250px;padding:24px;background:radial-gradient(circle at 20% 15%,#fff 0 8%,transparent 30%),linear-gradient(135deg,#dff5ff,#dceaff 55%,#eefaff);display:grid;place-items:center;border:1px solid #d7eaff;box-shadow:0 18px 45px #087cf015}.tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:min(100%,360px);transform:rotate(-3deg)}.tile{background:white;border-radius:16px;min-height:100px;padding:18px;box-shadow:0 10px 28px #29204c12;display:flex;flex-direction:column;justify-content:space-between}.tile:nth-child(2){background:linear-gradient(135deg,#0754cf,#087cf0);color:white;transform:translateY(16px)}.tile:nth-child(3){background:#dff8ff}.tile:nth-child(4){background:#dff7ec;transform:translateY(16px)}.tile strong{font-size:1.1rem}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:25px 0 15px}.sectionhead h2{margin:4px 0;font-size:1.6rem;letter-spacing:-.035em}.muted{color:var(--muted)}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0 22px}.chip{border:1px solid var(--line);background:white;padding:8px 13px;border-radius:999px}.chip.active{background:var(--soft);border-color:#9acfff;color:#0754b8;font-weight:750}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:white;border:1px solid var(--line);border-radius:17px;overflow:hidden;min-width:0}.thumb{height:175px;background:#e8f4ff;display:grid;place-items:center;padding:18px}.mock{width:78%;height:125px;border-radius:12px;background:#fff;box-shadow:0 10px 25px #29204c18;padding:15px;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(-3deg)}.mock strong{font-size:1.25rem;line-height:1.1;overflow-wrap:anywhere}.mock small{font-size:.7rem;color:#777}.card:nth-child(3n+2) .thumb{background:#e4faff}.card:nth-child(3n+2) .mock{transform:rotate(3deg)}.card:nth-child(3n) .thumb{background:#e5f8ef}.cardbody{padding:14px}.meta{font-size:.78rem;color:var(--muted)}.card h3{font-size:1rem;margin:7px 0;line-height:1.35}.cardfoot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:13px}.price{font-weight:900}.notice{margin:28px 0;padding:16px 18px;background:linear-gradient(120deg,#e8f4ff,#f0fbff);border:1px solid #cfe8ff;border-radius:15px;color:#164579;line-height:1.65}.status{margin:16px 0;padding:12px 14px;border-radius:12px;background:#f1f0f7;color:var(--muted);line-height:1.5}.status.good{background:#e9f8ef;color:#17663f}.status.error{background:#fff0f0;color:var(--bad)}.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;margin:20px 0}.panel h2,.panel h3{margin-top:0}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:grid;gap:6px;margin:10px 0}.field.full{grid-column:1/-1}.field label{font-size:.88rem;font-weight:700}.field input,.field select,.field textarea{width:100%;padding:11px 12px;border:1px solid #dedbe6;border-radius:10px;background:#fff;color:var(--ink)}.field textarea{min-height:95px;resize:vertical}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.sellerstats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{padding:15px;background:#eff7ff;border-radius:13px;border:1px solid #e0efff}.stat strong{display:block;font-size:1.35rem;margin-top:5px}.hidden{display:none!important}.empty{padding:35px;text-align:center;color:var(--muted);grid-column:1/-1}.small{font-size:.82rem}footer{border-top:1px solid var(--line);margin-top:45px;padding:25px 0;color:var(--muted);font-size:.88rem}dialog{border:0;border-radius:18px;padding:0;width:min(520px,92vw);box-shadow:0 25px 90px #17132940}dialog::backdrop{background:#17132980}.modal{padding:24px}.modal h2{margin-top:0}.close{float:right;border:0;background:#f2f1f5;border-radius:50%;width:34px;height:34px}
+@media(max-width:760px){.nav{flex-wrap:wrap;padding:12px 0}.search{order:3;flex-basis:100%;max-width:none}.hero{grid-template-columns:1fr;padding-top:32px}.heroart{min-height:215px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sellerstats{grid-template-columns:1fr}.navactions{margin-left:auto}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.thumb{height:190px}.navactions .btn{padding:9px 11px}.sectionhead{align-items:start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a href="#" class="logo" aria-label="Easy Shop หน้าแรก"><img src="assets/easy-shop-logo.png" alt="โลโก้ Easy Shop"><span style="color:#0754b8">Easy <span>Shop</span></span></a>
+<form class="search" id="searchForm"><input id="searchInput" placeholder="ค้นหาเทมเพลต, e-book, ไฟล์ภาพ..." aria-label="ค้นหาสินค้า"><button class="btn" type="submit">ค้นหา</button></form>
+<div class="navactions"><button class="btn secondary hidden" id="adminBtn">แอดมิน</button><button class="btn secondary" id="dashboardBtn">แดชบอร์ด</button><button class="btn" id="authBtn">เข้าสู่ระบบ</button></div>
+</div></header>
+<main class="wrap">
+<div id="appStatus" class="status">กำลังเตรียมเว็บไซต์…</div>
+<section class="hero">
+<div><div class="eyebrow">ตลาดกลางดิจิทัลของคนไทย</div><h1>ผลงานของคุณ<br><span style="background:linear-gradient(90deg,#087cf0,#13b8e8);-webkit-background-clip:text;background-clip:text;color:transparent">สร้างรายได้ได้จริง</span></h1><p>พื้นที่ของนักสร้างสรรค์ไทย ซื้อขายเทมเพลต งานกราฟิก e-book ฟอนต์ และไฟล์ดิจิทัลได้ในที่เดียว เปิดร้านฟรี เริ่มต้นง่าย เติบโตไปพร้อมชุมชนครีเอเตอร์ไทย</p><div class="actions"><a class="btn" href="#products">เลือกดูสินค้า</a><button class="btn secondary" id="heroSellBtn">เปิดร้านฟรี</button></div></div>
+<div class="heroart"><div class="tiles"><div class="tile"><small>🎨 งานสร้างสรรค์</small><strong>ออกแบบ<br>สไตล์คุณ</strong></div><div class="tile"><small>⚡ CREATOR TOOLS</small><strong>สร้างสรรค์<br>ให้ไปไกล</strong></div><div class="tile"><small>📚 DIGITAL LEARNING</small><strong>ความรู้ที่<br>แบ่งปันได้</strong></div><div class="tile"><small>💙 MADE IN THAILAND</small><strong>สนับสนุน<br>ครีเอเตอร์ไทย</strong></div></div></div>
+</section>
+<section id="products"><div class="sectionhead"><div><div class="eyebrow">Explore</div><h2>สินค้าดิจิทัล</h2></div><span class="muted" id="productCount"></span></div><div class="filters" id="filters"></div><div class="grid" id="productGrid"></div></section>
+<section id="dashboard" class="panel hidden">
+<div class="sectionhead"><div><div class="eyebrow">Seller studio</div><h2>แดชบอร์ดร้านค้า</h2></div><button class="btn secondary" id="refreshDashboard">รีเฟรช</button></div>
+<div id="shopSetup"></div><div id="sellerArea"></div>
+</section>
+<section id="adminPanel" class="panel hidden">
+ <div class="sectionhead"><div><div class="eyebrow">Platform control</div><h2>ศูนย์ผู้ดูแลระบบ</h2><p class="muted small">แสดงข้อมูลหลังตรวจสิทธิ์ผู้ดูแลจากฐานข้อมูลเท่านั้น</p></div><button class="btn secondary" id="adminRefresh">รีเฟรช</button></div>
+ <div class="sellerstats" id="adminStats"></div>
+ <h3>สินค้าที่ต้องดูแล</h3><div id="adminProducts"><p class="muted">กำลังโหลด…</p></div>
+ <h3>คำสั่งซื้อล่าสุด (ดูอย่างเดียว)</h3><div id="adminOrders"><p class="muted">กำลังโหลด…</p></div>
+ <h3>ร้านค้า</h3><div id="adminShops"><p class="muted">กำลังโหลด…</p></div>
+</section>
+<div class="notice"><strong>กติกาแพลตฟอร์ม:</strong> เปิดร้านฟรี · สินค้า 15 รายการแรกฟรี · รายการใหม่ 10 บาท/รายการ · GP 12% และปลดล็อก GP 0% เมื่อยอดขายสะสมสุทธิของร้านถึง 100,000 บาทตามกติกาแพลตฟอร์ม โปรดอ่าน README และตั้งค่า Supabase ก่อนเปิดให้ใช้งานจริง</div>
+</main>
+<footer><div class="wrap row" style="justify-content:space-between"><span><strong>Easy Shop</strong> — ตลาดกลางสินค้าดิจิทัลของคนไทย</span><span>© <span id="year"></span> · เติบโตไปด้วยกันกับครีเอเตอร์ไทย</span></div></footer>
+<dialog id="modal"><div class="modal"><button class="close" id="closeModal">×</button><div id="modalContent"></div></div></dialog>
+<script type="module">
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+
+/* Paste your Supabase project URL and anon/publishable key here.
+   Never put the service_role key in browser code. */
+const SUPABASE_URL = 'https://eocpgoimnsoahszjbnsf.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_0jo1tskHTmW3eO6gYAtp_w_tMdsCEcd';
+const configured = SUPABASE_URL.startsWith('https://') && !SUPABASE_URL.includes('PASTE_') && !SUPABASE_ANON_KEY.includes('PASTE_');
+const supabase = configured ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
+
+const $ = s => document.querySelector(s);
+let currentUser = null, myShop = null, allProducts = [], activeCategory = 'ทั้งหมด', searchQuery = '', isAdmin = false;
+const demoProducts = [
+{id:'demo1',title:'แพ็กเทมเพลตโซเชียล 30 แบบ',category:'เทมเพลต',price:129,shop_name:'Studio Bloom',description:'ชุดเลย์เอาต์สำหรับโพสต์โซเชียล',is_demo:true},
+{id:'demo2',title:'E-book วางแผนชีวิต 90 วัน',category:'E-book',price:89,shop_name:'Paper Habit',description:'ไฟล์สำหรับวางเป้าหมายและติดตามกิจวัตร',is_demo:true},
+{id:'demo3',title:'ชุดภาพประกอบมินิมอล',category:'ไฟล์ภาพ',price:159,shop_name:'Mali Creates',description:'ชุดภาพประกอบสำหรับงานสร้างสรรค์',is_demo:true},
+{id:'demo4',title:'เทมเพลตเรซูเม่สมัครงาน',category:'เทมเพลต',price:59,shop_name:'Next Step',description:'เลย์เอาต์เรซูเม่ที่ปรับแต่งได้',is_demo:true},
+{id:'demo5',title:'แพ็กไอคอนสำหรับเว็บ',category:'ไฟล์ภาพ',price:99,shop_name:'Pixel Pantry',description:'ชุดไอคอนสำหรับต้นแบบเว็บไซต์',is_demo:true},
+{id:'demo6',title:'สมุดจดรายรับรายจ่าย',category:'E-book',price:49,shop_name:'Good Days Lab',description:'ไฟล์ช่วยจดบันทึกค่าใช้จ่าย',is_demo:true}
+];
+function setStatus(msg,kind=''){const el=$('#appStatus');el.textContent=msg;el.className='status '+kind}
+function escapeHtml(s=''){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function money(n){return '฿'+Number(n||0).toLocaleString('th-TH',{maximumFractionDigits:2})}
+function openModal(html){$('#modalContent').innerHTML=html;$('#modal').showModal()}
+function closeModal(){$('#modal').close()}
+function setAuthButton(){ $('#authBtn').textContent=currentUser?'ออกจากระบบ':'เข้าสู่ระบบ'; $('#dashboardBtn').textContent=currentUser?'แดชบอร์ด':'สมัครเป็นผู้ขาย' }
+async function init(){
+ $('#year').textContent=new Date().getFullYear();
+ if(!configured){setStatus('โหมดตัวอย่าง: ยังไม่ได้ตั้งค่า Supabase จึงแสดงสินค้าเดโมเท่านั้น อ่าน README เพื่อเชื่อมฐานข้อมูล','');allProducts=demoProducts;renderFilters();renderProducts();setAuthButton();return}
+ const {data:{session}}=await supabase.auth.getSession();currentUser=session?.user||null;
+ supabase.auth.onAuthStateChange((_event,session)=>{currentUser=session?.user||null;setAuthButton();checkAdmin();loadShop();});
+ setAuthButton();await checkAdmin();await loadProducts();await loadShop();setStatus('เชื่อมต่อ Supabase แล้ว','good');
+}
+async function loadProducts(){
+ const {data,error}=await supabase.from('products_public').select('*').eq('status','published').order('created_at',{ascending:false}).limit(100);
+ if(error){setStatus('โหลดสินค้าไม่สำเร็จ: '+error.message,'error');return}
+ allProducts=data||[];renderFilters();renderProducts();
+}
+function renderFilters(){
+ const cats=['ทั้งหมด',...new Set(allProducts.map(p=>p.category).filter(Boolean))];if(!cats.includes(activeCategory))activeCategory='ทั้งหมด';
+ $('#filters').innerHTML=cats.map(c=>`<button class="chip ${c===activeCategory?'active':''}" data-cat="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join('');
+ $('#filters').querySelectorAll('button').forEach(b=>b.onclick=()=>{activeCategory=b.dataset.cat;renderFilters();renderProducts()});
+}
+function renderProducts(){
+ const list=allProducts.filter(p=>(activeCategory==='ทั้งหมด'||p.category===activeCategory)&&(`${p.title} ${p.category} ${p.shop_name||''} ${p.description||''}`).toLowerCase().includes(searchQuery.toLowerCase()));
+ $('#productCount').textContent=`${list.length} รายการ`;
+ $('#productGrid').innerHTML=list.length?list.map(p=>`<article class="card"><div class="thumb"><div class="mock"><small>${escapeHtml((p.category||'DIGITAL').toUpperCase())}</small><strong>${escapeHtml(p.title)}</strong><small>PIXELMARKET DOWNLOAD</small></div></div><div class="cardbody"><div class="meta">${escapeHtml(p.category||'สินค้า')} · ${escapeHtml(p.shop_name||'ร้านค้า')}</div><h3>${escapeHtml(p.title)}</h3><p class="muted small">${escapeHtml(p.description||'')}</p><div class="cardfoot"><span class="price">${money(p.price)}</span><button class="btn light" data-buy="${escapeHtml(p.id)}">ดู / สั่งซื้อ</button></div></div></article>`).join(''):'<div class="empty">ยังไม่มีสินค้าในหมวดนี้ ลองค้นหาคำอื่นหรือกลับมาดูอีกครั้ง</div>';
+ $('#productGrid').querySelectorAll('[data-buy]').forEach(b=>b.onclick=()=>buyProduct(b.dataset.buy));
+}
+async function buyProduct(id){
+ const p=allProducts.find(x=>String(x.id)===String(id));if(!p)return;
+ if(p.is_demo){openModal(`<h2>${escapeHtml(p.title)}</h2><p>${escapeHtml(p.description)}</p><p><strong>${money(p.price)}</strong></p><p class="muted">สินค้านี้เป็นข้อมูลเดโม ยังไม่สามารถสั่งซื้อได้</p>`);return}
+ if(!currentUser){authModal('login','กรุณาเข้าสู่ระบบก่อนสร้างคำสั่งซื้อ');return}
+ if(p.seller_id===currentUser.id){openModal('<h2>ซื้อสินค้าของตัวเองไม่ได้</h2>');return}
+ openModal(`<h2>ยืนยันคำสั่งซื้อ</h2><p>${escapeHtml(p.title)}</p><p>ราคา <strong>${money(p.price)}</strong></p><p class="muted">การกดปุ่มนี้จะสร้างคำสั่งซื้อสถานะรอชำระเงิน ยังไม่มีการตัดเงินจริง</p><button class="btn" id="confirmOrder">สร้างคำสั่งซื้อ</button>`);
+ $('#confirmOrder').onclick=async()=>{
+  const btn=$('#confirmOrder');btn.disabled=true;
+  const {data,error}=await supabase.rpc('create_order',{p_product_id:p.id});
+  if(error){openModal(`<h2>สร้างคำสั่งซื้อไม่สำเร็จ</h2><p>${escapeHtml(error.message)}</p>`);return}
+  openModal(`<h2>สร้างคำสั่งซื้อแล้ว</h2><p>เลขคำสั่งซื้อ: <strong>${escapeHtml(data?.order_id||data?.id||'ตรวจสอบในแดชบอร์ด')}</strong></p><p class="muted">สถานะเริ่มต้นคือรอชำระเงิน กรุณาทำขั้นตอนชำระเงินที่ผู้ดูแลกำหนด ระบบยังไม่ยืนยันยอดหรือส่งไฟล์อัตโนมัติ</p>`);
+ };
+}
+function authModal(mode='login',message=''){
+ const isSignup=mode==='signup';
+ openModal(`<h2>${isSignup?'สมัครสมาชิก':'เข้าสู่ระบบ'}</h2>${message?`<p class="muted">${escapeHtml(message)}</p>`:''}<form id="authForm"><label class="field">อีเมล<input type="email" name="email" required autocomplete="email"></label><label class="field">รหัสผ่าน<input type="password" name="password" required minlength="8" autocomplete="${isSignup?'new-password':'current-password'}"></label>${isSignup?'<label class="field">ชื่อที่แสดง<input name="display_name" maxlength="60" placeholder="ชื่อผู้ใช้"></label>':''}<button class="btn" type="submit">${isSignup?'สร้างบัญชี':'เข้าสู่ระบบ'}</button></form><p class="small muted">${isSignup?'มีบัญชีแล้ว?':'ยังไม่มีบัญชี?'} <a href="#" id="switchAuth" style="color:var(--accent);font-weight:800">${isSignup?'เข้าสู่ระบบ':'สมัครสมาชิก'}</a></p>`);
+ $('#switchAuth').onclick=e=>{e.preventDefault();authModal(isSignup?'login':'signup')};
+ $('#authForm').onsubmit=async e=>{
+  e.preventDefault();const fd=new FormData(e.target);const email=fd.get('email'),password=fd.get('password');
+  const result=isSignup?await supabase.auth.signUp({email,password,options:{data:{display_name:fd.get('display_name')||''}}}):await supabase.auth.signInWithPassword({email,password});
+  if(result.error){const err=result.error.message;openModal(`<h2>ดำเนินการไม่สำเร็จ</h2><p>${escapeHtml(err)}</p><button class="btn secondary" id="backAuth">กลับ</button>`);$('#backAuth').onclick=()=>authModal(mode);return}
+  if(isSignup&&!result.data.session){openModal('<h2>สมัครแล้ว</h2><p>โปรดตรวจสอบอีเมลเพื่อยืนยันบัญชี แล้วกลับมาเข้าสู่ระบบ</p>');return}
+  currentUser=result.data.user||result.data.session?.user;closeModal();setAuthButton();await loadShop();setStatus('เข้าสู่ระบบแล้ว','good');
+ };
+}
+async function loadShop(){
+ if(!configured)return;
+ if(!currentUser){myShop=null;$('#dashboard').classList.add('hidden');return}
+ const {data,error}=await supabase.from('shops').select('*').eq('owner_id',currentUser.id).maybeSingle();
+ if(error){setStatus('โหลดร้านไม่สำเร็จ: '+error.message,'error');return}
+ myShop=data;renderDashboard();
+}
+function renderDashboard(){
+ $('#dashboard').classList.remove('hidden');
+ if(!myShop){
+  $('#shopSetup').innerHTML=`<div class="panel"><h3>เปิดร้านฟรี</h3><p class="muted">สร้างร้านของคุณก่อน แล้วจึงเริ่มลงสินค้า</p><form id="shopForm" class="formgrid"><div class="field"><label>ชื่อร้าน</label><input name="name" maxlength="60" required></div><div class="field"><label>ชื่อร้านสำหรับ URL (slug)</label><input name="slug" pattern="[a-z0-9-]{3,40}" required placeholder="my-digital-shop"></div><div class="field full"><label>คำอธิบายร้าน</label><textarea name="description" maxlength="500"></textarea></div><div class="field full"><button class="btn">สร้างร้านฟรี</button></div></form></div>`;
+  $('#sellerArea').innerHTML='';$('#shopForm').onsubmit=createShop;return
+ }
+ $('#shopSetup').innerHTML=`<div class="panel"><h3>${escapeHtml(myShop.name)}</h3><p class="muted">${escapeHtml(myShop.description||'ยังไม่มีคำอธิบายร้าน')}</p><div class="sellerstats"><div class="stat"><span class="muted small">ยอดขายสะสมสุทธิ</span><strong>${money(myShop.qualified_sales)}</strong></div><div class="stat"><span class="muted small">GP ปัจจุบัน</span><strong>${Number(myShop.qualified_sales)>=100000?'0%':'12%'}</strong></div><div class="stat"><span class="muted small">สิทธิ์สินค้า 15 รายการแรก</span><strong>${Math.max(0,15-Number(myShop.published_listing_count||0))} รายการ</strong></div></div><p class="small muted">สินค้าเกิน 15 รายการจะคิด 10 บาทต่อรายการใหม่เมื่อเชื่อมระบบเรียกเก็บเงินจริงแล้ว ยอดขายและสถานะ GP ต้องอัปเดตจากคำสั่งซื้อที่ผู้ดูแลยืนยัน</p></div>`;
+ $('#sellerArea').innerHTML=`<div class="panel"><h3>ลงสินค้าใหม่</h3><form id="productForm" class="formgrid"><div class="field"><label>ชื่อสินค้า</label><input name="title" maxlength="120" required></div><div class="field"><label>หมวดหมู่</label><select name="category"><option>เทมเพลต</option><option>E-book</option><option>ไฟล์ภาพ</option><option>ฟอนต์</option><option>ไฟล์ 3D</option><option>อื่น ๆ</option></select></div><div class="field"><label>ราคา (บาท)</label><input name="price" type="number" min="1" max="100000" step="1" required></div><div class="field"><label>ไฟล์ตัวอย่าง / URL รูปภาพ (ไม่บังคับ)</label><input name="preview_url" type="url" placeholder="https://..."></div><div class="field full"><label>รายละเอียด</label><textarea name="description" maxlength="2000" required></textarea></div><div class="field full"><label>URL ไฟล์ดิจิทัล (เวอร์ชันทดลองเท่านั้น)</label><input name="file_url" type="url" placeholder="อย่าใส่ลิงก์ไฟล์ส่วนตัวที่ยังไม่มีระบบป้องกัน"></div><div class="field full"><button class="btn">ส่งสินค้าให้เผยแพร่</button></div></form><p class="small muted">คำเตือน: ช่อง URL ไฟล์นี้ยังไม่ใช่ระบบดาวน์โหลดแบบปลอดภัย อย่าใช้กับไฟล์ที่ต้องจำกัดสิทธิ์จนกว่าจะตั้งค่า private storage และ signed URL ฝั่งเซิร์ฟเวอร์</p></div><div class="panel"><h3>สินค้าของฉัน</h3><div id="myProducts"></div></div><div class="panel"><h3>คำสั่งซื้อของฉัน</h3><div id="myOrders"></div></div>`;
+ $('#productForm').onsubmit=createProduct;loadMyProducts();loadMyOrders();
+}
+async function createShop(e){
+ e.preventDefault();const fd=new FormData(e.target);
+ const {data,error}=await supabase.from('shops').insert({owner_id:currentUser.id,name:fd.get('name').trim(),slug:fd.get('slug').trim().toLowerCase(),description:fd.get('description').trim()}).select().single();
+ if(error){setStatus('สร้างร้านไม่สำเร็จ: '+error.message,'error');return}
+ myShop=data;renderDashboard();setStatus('สร้างร้านเรียบร้อย','good');
+}
+async function createProduct(e){
+ e.preventDefault();if(!myShop)return;const fd=new FormData(e.target);
+ const {data,error}=await supabase.rpc('create_product_listing',{p_title:fd.get('title').trim(),p_category:fd.get('category'),p_description:fd.get('description').trim(),p_price:Number(fd.get('price')),p_preview_url:fd.get('preview_url')||null,p_file_url:fd.get('file_url')||null});
+ if(error){setStatus('ลงสินค้าไม่สำเร็จ: '+error.message,'error');return}
+ e.target.reset();setStatus(data?.message||'เพิ่มสินค้าแล้ว หากเกินโควตาฟรีจะต้องเชื่อมการชำระค่าลงสินค้าก่อนเผยแพร่','good');await loadShop();await loadProducts();await loadMyProducts();
+}
+async function loadMyProducts(){
+ if(!myShop)return;const {data,error}=await supabase.from('products').select('id,title,category,price,status,created_at').eq('seller_id',currentUser.id).order('created_at',{ascending:false});
+ const el=$('#myProducts');if(!el)return;if(error){el.textContent=error.message;return}
+ el.innerHTML=data?.length?data.map(p=>`<div class="row" style="justify-content:space-between;border-bottom:1px solid var(--line);padding:10px 0"><div><strong>${escapeHtml(p.title)}</strong><div class="meta">${escapeHtml(p.category)} · ${escapeHtml(p.status)}</div></div><strong>${money(p.price)}</strong></div>`).join(''):'<p class="muted">ยังไม่มีสินค้า</p>';
+}
+async function loadMyOrders(){
+ if(!currentUser)return;const el=$('#myOrders');if(!el)return;
+ const {data,error}=await supabase.from('orders').select('id,amount,gp_amount,status,created_at,products(title)').or(`buyer_id.eq.${currentUser.id},seller_id.eq.${currentUser.id}`).order('created_at',{ascending:false}).limit(30);
+ if(error){el.innerHTML='<p class="muted">ยังโหลดรายการไม่ได้ หรือยังไม่มีคำสั่งซื้อ</p>';return}
+ el.innerHTML=data?.length?data.map(o=>`<div class="row" style="justify-content:space-between;border-bottom:1px solid var(--line);padding:10px 0"><div><strong>${escapeHtml(o.products?.title||'คำสั่งซื้อ')}</strong><div class="meta">${new Date(o.created_at).toLocaleDateString('th-TH')} · ${escapeHtml(o.status)}</div></div><strong>${money(o.amount)}</strong></div>`).join(''):'<p class="muted">ยังไม่มีคำสั่งซื้อ</p>';
+}
+async function checkAdmin(){
+ isAdmin=false;$('#adminBtn').classList.add('hidden');$('#adminPanel').classList.add('hidden');
+ if(!configured||!currentUser)return;
+ const {data,error}=await supabase.rpc('is_current_user_admin');
+ if(!error&&data===true){isAdmin=true;$('#adminBtn').classList.remove('hidden')}
+}
+function adminRow(label,detail,extra=''){return `<div class="row" style="justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:10px 0"><div><strong>${escapeHtml(label||'—')}</strong><div class="meta">${escapeHtml(detail||'')}</div></div>${extra}</div>`}
+async function openAdmin(){
+ if(!currentUser){authModal('login','เข้าสู่ระบบบัญชีผู้ดูแล');return}
+ await checkAdmin();if(!isAdmin){setStatus('บัญชีนี้ไม่มีสิทธิ์ผู้ดูแล','error');return}
+ $('#adminPanel').classList.remove('hidden');$('#adminPanel').scrollIntoView({behavior:'smooth'});await loadAdminData();
+}
+async function loadAdminData(){
+ if(!isAdmin)return;
+ const [pr,or,sh]=await Promise.all([
+  supabase.from('products').select('id,title,category,price,status,listing_fee_due,created_at,seller_id').order('created_at',{ascending:false}).limit(50),
+  supabase.from('orders').select('*').order('created_at',{ascending:false}).limit(30),
+  supabase.from('shops').select('*').order('created_at',{ascending:false}).limit(50)
+ ]);
+ if(pr.error||or.error||sh.error){setStatus('โหลดข้อมูลแอดมินไม่สำเร็จ ตรวจสอบว่าได้รัน supabase/admin_setup.sql แล้ว','error');return}
+ const products=pr.data||[],orders=or.data||[],shops=sh.data||[];
+ $('#adminStats').innerHTML=[['สินค้า',products.length],['คำสั่งซื้อ',orders.length],['ร้านค้า',shops.length]].map(([a,b])=>`<div class="stat"><span class="muted small">${a} (รายการล่าสุด)</span><strong>${b}</strong></div>`).join('');
+ $('#adminProducts').innerHTML=products.length?products.map(p=>adminRow(p.title,`${p.category} · ${money(p.price)} · ${p.status} · ค่าลงสินค้า ${money(p.listing_fee_due)}`,`<div class="row"><select aria-label="สถานะสินค้า" id="status-${p.id}"><option value="published" ${p.status==='published'?'selected':''}>เผยแพร่</option><option value="draft" ${p.status==='draft'?'selected':''}>ฉบับร่าง</option><option value="removed" ${p.status==='removed'?'selected':''}>นำออก</option></select><button class="btn secondary" data-save-product="${p.id}">บันทึก</button></div>`)).join(''):'<p class="muted">ยังไม่มีสินค้า</p>';
+ $('#adminProducts').querySelectorAll('[data-save-product]').forEach(b=>b.onclick=async()=>{const id=b.dataset.saveProduct;const status=$(`#status-${id}`).value;const {error}=await supabase.from('products').update({status,updated_at:new Date().toISOString()}).eq('id',id);if(error){setStatus('แก้สถานะไม่สำเร็จ: '+error.message,'error');return}setStatus('อัปเดตสถานะสินค้าแล้ว','good');await loadAdminData();await loadProducts()});
+ $('#adminOrders').innerHTML=orders.length?orders.map(o=>adminRow(`คำสั่งซื้อ ${o.id.slice(0,8)}`,`${new Date(o.created_at).toLocaleString('th-TH')} · ${o.status||'ไม่ระบุสถานะ'} · ยอด ${money(o.amount ?? o.total)} · GP ${o.gp_amount==null?'ยังไม่คำนวณ':money(o.gp_amount)}`)).join(''):'<p class="muted">ยังไม่มีคำสั่งซื้อ</p>';
+ $('#adminShops').innerHTML=shops.length?shops.map(x=>adminRow(x.name,`${x.slug?'/'+x.slug:''} · ยอดขาย ${money(x.qualified_sales)} · เจ้าของ ${x.owner_id||''}`)).join(''):'<p class="muted">ยังไม่มีร้านค้า</p>';
+}
+$('#adminBtn').onclick=openAdmin;$('#adminRefresh').onclick=loadAdminData;
+$('#authBtn').onclick=async()=>{if(!configured){openModal('<h2>ต้องตั้งค่า Supabase ก่อน</h2><p>ทำตามขั้นตอนใน README แล้วใส่ URL และ anon key ใน index.html</p>');return}if(currentUser){await supabase.auth.signOut();currentUser=null;myShop=null;setAuthButton();$('#dashboard').classList.add('hidden');setStatus('ออกจากระบบแล้ว','good')}else authModal('login')};
+function openDashboard(){if(!configured){openModal('<h2>ตั้งค่าฐานข้อมูลก่อน</h2><p>เว็บไซต์แสดงโหมดตัวอย่างอยู่ กรุณาทำตาม README เพื่อเปิดระบบสมาชิกและร้านค้าจริง</p>');return}if(!currentUser){authModal('signup','สมัครสมาชิกเพื่อเปิดร้านฟรี');return}$('#dashboard').classList.remove('hidden');$('#dashboard').scrollIntoView({behavior:'smooth'});renderDashboard()}
+$('#dashboardBtn').onclick=openDashboard;$('#heroSellBtn').onclick=openDashboard;$('#refreshDashboard').onclick=async()=>{await loadShop();await loadProducts();setStatus('อัปเดตข้อมูลแล้ว','good')};
+$('#closeModal').onclick=closeModal;$('#searchForm').onsubmit=e=>{e.preventDefault();searchQuery=$('#searchInput').value.trim();renderProducts();$('#products').scrollIntoView({behavior:'smooth'})};$('#searchInput').oninput=e=>{searchQuery=e.target.value.trim();renderProducts()};
+init();
+</script>
+</body>
+</html>
